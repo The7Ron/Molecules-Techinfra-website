@@ -1,0 +1,485 @@
+.about-hero {
+  height: 500px;
+  width: 100vw;
+  background-color: #ffffff;
+  margin-top: 100px;
+  display: flex;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-design {
+  height: 500px;
+  width: 15%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s;
+}
+
+.about-text h1 {
+  font-size: 64px;
+  font-family: Poppins, sans-serif;
+  font-weight: 900;
+  color: #3255f1;
+  text-align: center;
+  margin: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text p {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+}
+
+.about-text {
+  height: 500px;
+  width: 75%;
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+#about-design-1 {
+  background-image: url(./Assets/enhanced.png);
+  background-size: cover;
+  padding-left: 70px;
+}
+
+#about-design-2 {
+  background-image: url(./Assets/enhanced\ 2.png);
+  background-size: cover;
+  padding-right: 100px;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+
+/*Mission*/
+
+.mission {
+  height: 400px;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.mission-text {
+  height: 350px;
+  width: 30%;
+  background-color: #ffffff;
+  margin-left: 150px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease-out 0.3s forwards;
+}
+
+.mission-text h1 {
+  color: #3255f1;
+  font-size: 56px;
+  font-family: poppins, sans-serif;
+  font-weight: 900;
+  padding-left: 20px;
+  margin-top: 60px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  color: #494949;
+  font-size: 20px;
+  font-family: poppins, sans-serif;
+  padding-left: 20px;
+}
+
+.mission-pic {
+  height: 350px;
+  width: 30%;
+  background-color: #ffffff;
+  margin-right: 150px;
+  background-image: url(./Assets/5107007.jpg);
+  background-size: contain;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease-out 0.6s forwards;
+}
+
+.mission-button {
+  position: absolute;
+  right: 180px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out 1s forwards;
+}
+
+.mission-button a {
+  margin-top: 50px;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Vission */
+
+.vission {
+  height: 400px;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.vission-text {
+  height: 350px;
+  width: 30%;
+  background-color: #ffffff;
+  margin-right: 150px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease-out 0.3s forwards;
+}
+
+.vission-pic {
+  height: 350px;
+  width: 30%;
+  background-color: #ffffff;
+  margin-left: 150px;
+  background-image: url(./Assets/5138438.jpg);
+  background-size: contain;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease-out 0.6s forwards;
+}
+
+.vission-text h1 {
+  color: #3255f1;
+  font-size: 56px;
+  font-family: poppins, sans-serif;
+  font-weight: 900;
+  padding-left: 20px;
+  margin-top: 60px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.vission-text p {
+  color: #494949;
+  font-size: 20px;
+  font-family: poppins, sans-serif;
+  padding-left: 20px;
+}
+ /* Our team */
+  .team {
+    height: 500px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .team h1 {
+    text-align: center;
+    font-size: 56px;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+    color: #3255f1;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-out 0.3s forwards;
+  }
+
+  .team-box {
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .director {
+    height: 350px;
+    width: 25%;
+    background-color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .director:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .director:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .director:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+
+  .profile {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 10px;
+    background-image: url(./Assets/CEO.jpg);
+    background-size: cover;
+    border: 2px solid #3255f1;
+    transition: transform 0.3s ease;
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
+  }
+
+  .d-name {
+    height: 100px;
+    width: 100%;
+    background-color: #3255f1;
+    margin-top: 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 1s forwards;
+  }
+
+  .d-name h2 {
+    font-size: 28px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+
+  .d-name h3 {
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+
+  #p1 {
+    background-image: url(./Assets/Director.png);
+    background-size: cover;
+  }
+
+  #p2 {
+    background-image: url(./Assets/CTO.png);
+    background-size: cover;
+  }
+
+  
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.choose {
+  height: 350px;
+  width: 100vw;
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  padding-bottom: 50px;
+}
+
+
+.choose h1 {
+  font-size: 56px;
+  font-family: poppins,sans-serif;
+  font-weight: 900;
+  color: #3255f1;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease-out 0.3s forwards;
+}
+
+
+.choose p {
+  width: 60%;
+  text-align: center;
+  font-family: poppins,sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #494949;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*culture*/
+
+.culture {
+  height: 500px;
+  width: 100vw;
+  background-color: #3255f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.culture-pic {
+  height: 450px;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(./Assets/under-construction-4010446_1280-removebg-preview.png);
+  background-size: contain;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease-out 0.5s forwards;
+}
+
+.culture-text {
+  height: 450px;
+  width: 40%;
+  background-color: rgba(50, 205, 205, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease-out 0.7s forwards;
+}
+.culture-text h1 {
+  font-size: 48px;
+  font-family: popppins,sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+}
+
+.culture-text p {
+  font-size: 20px;
+  font-family: popppins,sans-serif;
+  text-align: center;
+  color: rgb(235, 235, 235);
+
+}
+
+.footer {
+  margin: 0;
+  border: 0;
+}
